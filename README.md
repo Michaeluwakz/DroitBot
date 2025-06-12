@@ -1,6 +1,6 @@
 # 🛡️ DriodBot - AI Scam Shield & Legal Assistant for Tunisia
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 
 **Real-time scam detection and legal guidance in Tunisian Arabic**  
 *No data leaves your device – 100% private*
@@ -30,7 +30,10 @@ DriodBot solves this with:
 
 
 
+## TO DOWNLOAD
+
 bash
+
 git clone https://github.com/Michaeluwakz/DriotBot.git
 cd DriotBot
 
