@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* White */
+    --foreground: 224 71.4% 4.1%; /* Dark Blue */
+
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 224 71.4% 4.1%; /* Dark Blue */
+
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 224 71.4% 4.1%; /* Dark Blue */
+
+    --primary: 330 85% 55%; /* Vibrant Pink */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 215 20.2% 65.1%; /* Muted Blue */
+    --secondary-foreground: 0 0% 100%; /* White */
+
+    --muted: 215 27.9% 90%; /* Light Muted Blue */
+    --muted-foreground: 215 20.2% 45.1%; /* Medium Muted Blue */
+
+    --accent: 190 85% 55%; /* Vibrant Cyan */
+    --accent-foreground: 224 71.4% 4.1%; /* Dark Blue */
+
+    --destructive: 0 72.2% 50.6%; /* Red */
+    --destructive-foreground: 0 0% 100%; /* White */
+
+    --border: 215 27.9% 85%; /* Light Gray-Blue Border */
+    --input: 215 27.9% 85%; /* Light Gray-Blue Input */
+    --ring: 330 85% 55%; /* Vibrant Pink for Ring */
+
+    --radius: 0.5rem;
+
+    /* Sidebar specific colors for light theme */
+    --sidebar-background: 0 0% 97%; /* Very Light Gray */
+    --sidebar-foreground: 224 71.4% 4.1%; /* Dark Blue */
+    --sidebar-primary: 330 85% 55%; /* Vibrant Pink */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 215 27.9% 90%; /* Light Muted Blue */
+    --sidebar-accent-foreground: 224 71.4% 4.1%; /* Dark Blue */
+    --sidebar-border: 215 27.9% 80%; /* Slightly Darker Gray-Blue Border */
+    --sidebar-ring: 330 85% 55%; /* Vibrant Pink */
+
+    --chart-1: 330 85% 55%; 
+    --chart-2: 190 85% 55%; 
+    --chart-3: 215 20.2% 65.1%;
+    --chart-4: 35 87% 67%; 
+    --chart-5: 0 59% 40%;
+  }
+
+  .dark {
+    --background: 240 10% 2%; /* Near Black */
+    --foreground: 0 0% 98%; /* Off-White */
+
+    /* Glassmorphism for cards */
+    --card: 0 0% 100% / 0.06; /* Very subtle white transparent layer */
+    --card-foreground: 0 0% 98%; /* Off-White */
+
+    /* Glassmorphism for popovers */
+    --popover: 0 0% 100% / 0.08; /* Slightly more opaque for popovers */
+    --popover-foreground: 0 0% 98%; /* Off-White */
+
+    --primary: 330 80% 60%; /* Vibrant Pink */
+    --primary-foreground: 0 0% 100%; /* White for text on primary */
+
+    --secondary: 210 20% 40% / 0.5; /* Semi-transparent muted blue */
+    --secondary-foreground: 0 0% 98%; /* Off-White */
+
+    --muted: 0 0% 100% / 0.05; /* Very subtle transparent white */
+    --muted-foreground: 0 0% 70%; /* Lighter gray for muted text */
+
+    --accent: 190 80% 60%; /* Vibrant Cyan */
+    --accent-foreground: 240 10% 3.9%; /* Dark for text on accent */
+
+    --destructive: 0 60% 50%; /* Brighter Red for dark mode */
+    --destructive-foreground: 0 0% 98%; /* Off-White */
+
+    --border: 0 0% 100% / 0.1; /* Subtle light semi-transparent border */
+    --input: 0 0% 100% / 0.07; /* Glassy input background */
+    --ring: 330 80% 60%; /* Vibrant Pink for Ring */
+
+    /* Sidebar specific colors for dark glass theme */
+    --sidebar-background: 240 5% 10% / 0.65; /* Dark, semi-transparent glass for sidebar */
+    --sidebar-foreground: 0 0% 95%; /* Light text */
+    --sidebar-primary: 330 80% 60%; /* Vibrant Pink */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 330 80% 60% / 0.15; /* Semi-transparent pink for hover */
+    --sidebar-accent-foreground: 0 0% 98%; /* Very light text for hover */
+    --sidebar-border: 0 0% 100% / 0.1; /* Subtle light border for sidebar */
+    --sidebar-ring: 330 80% 60%; /* Vibrant Pink */
+    
+    --chart-1: 330 80% 60%;
+    --chart-2: 190 80% 60%;
+    --chart-3: 210 30% 50%;
+    --chart-4: 35 70% 50%;
+    --chart-5: 0 40% 30%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
