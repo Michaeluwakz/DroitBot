@@ -5,9 +5,6 @@
 **Real-time scam detection and legal guidance in Tunisian Arabic**  
 *No data leaves your device – 100% private*
 
-<p align="center">
-  <img src="assets/app_screenshot.png" width="300" alt="DriodBot in action">
-</p>
 
 ## 🌍 Why DriodBot?
 Tunisia faces:
@@ -37,3 +34,6 @@ bash
 git clone https://github.com/Michaeluwakz/DriotBot.git
 cd DriotBot
 
+## To Use
+
+Add your Api Keys in the .env file 
